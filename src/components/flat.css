@@ -1,0 +1,17 @@
+.flat {
+<!-- calc property, allows you to decide the space your grid will take minus the pixels on each side, so the screen will 
+change in every devide
+For us the box takes 50% minus 20px, which are 10px on each side -->
+    flex-basis: calc(50% - 20px);
+	margin: 10px;
+}
+
+.flat-picture {
+	height: 200px;
+	background-size: cover;
+	background-position: center;
+}
+
+.flat-title {
+	margin-top: 10px;
+}
