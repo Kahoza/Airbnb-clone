@@ -4,6 +4,10 @@ import React from "react";
 import "./flat.css";
 
 class Flat extends React.Component {
+	handleClick = () => {
+		// We call the parent method selectFlat
+		this.props.selectFlat(this.props.flat);
+	}
 	render() {
 		// We are parsing a JSON file and taking the info needed 
 		const title = this.props.flat.price 
@@ -18,9 +22,8 @@ class Flat extends React.Component {
 		};
 
 		return (
-			<div className="flat">	
+			<div className="flat" onClick={this.handleClick}>	
 				<div className="flat-picture" style={style}></div>
-				
 				<div className="flat-title"></div>
 					{title}
 
